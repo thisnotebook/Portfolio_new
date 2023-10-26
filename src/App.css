@@ -1,0 +1,638 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+*{
+  margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto Mono', monospace;
+}
+body{
+  height: 100vh;
+  background-color: #000;
+  background-image:url(./assets/xyz.jpg);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+ 
+}
+li{
+  list-style: none;
+}
+.wrapper{
+ 
+  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+ /* Set background to fixed position */
+ 
+
+}
+.content{
+  margin: 1rem 1rem;
+  background-color: rgba(32, 31, 31, 0.778);;
+}
+.software-skill-inline{
+  list-style:none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+border: solid  transparent ;
+
+}
+.software-skill-inline:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+} 
+
+a:hover{
+  color: orange;
+  transition: color 0.3s linear ;
+}
+/* {--------------------------------animation ---------------------} */
+.headings{
+  position: relative;
+  text-decoration: none;
+}
+.headings:after{
+  content: "";
+  position: absolute;
+  background-color: orange;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+
+}
+.headings:hover:after{
+  
+  width: 100% !important;
+  transition:0.3s;
+} 
+/*-{-------------------------------animation ---------------------*/
+/* header*/
+header{
+  position: relative;
+  padding: 0 auto;
+ 
+  
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*space-between*/
+ padding-top: 2rem;
+}
+.navbar .logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+ 
+}
+.navbar .toggle-btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+.drop-down-menu{
+  display: none;
+  position: absolute ;
+  right: 2rem;
+
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px) ;
+  border-radius: 10px;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 0;
+  border-bottom: 0;
+  overflow: hidden ;
+  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 2;
+
+
+}
+.drop-down-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change the background color to your desired color */
+}
+
+
+.open{
+  height: 200px;
+  
+}
+.drop-down-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  border: solid  transparent ;
+  transition: background-color 0.5s ease;
+ 
+}
+
+.drop-down-menu .action_btn{
+  width: 100%;
+  display: flex;
+
+  justify-self: center ;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  
+}
+.resume-btn{
+
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  color: white;
+  background-color: orange;
+  border: 1px solid orange ; 
+  transition: all 0.25s linear;
+ 
+}
+.resume-btn:hover{
+  background-color: white;
+  color:orange;
+  border: 1px white solid;
+  border-bottom: 1px orange solid;
+}
+/* .resume-btn h3{
+  font-size:15px ;
+} */
+
+
+.container-home{
+  z-index: 1;
+  position: relative;
+  width: 90%;/* 90% of parents */
+  color: #fff;
+  /* background-color: rgba(21, 20, 20, 0.696); */
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  padding:1rem;
+
+
+
+}
+.Intro{
+  width: 90%;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+}
+.Intro h1{
+  font-size: 40px;
+  padding-bottom: 2.5rem;
+
+}
+.Intro button{
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+ul {
+  list-style-type: none;
+}
+
+/* SKILLS */
+.container-skill{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sec-container{
+  /* margin-top: 1.5rem; */
+  z-index: 1;
+  position: relative;
+  width: 90%;/* 90% of parents */
+  
+  /* background-color: rgba(21, 20, 20, 0.696); */
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 0;
+  border-right: 0;
+  
+  padding: 1.5rem 1.5rem;
+color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+.sec-container  h2{
+  margin-bottom: 10px;
+}
+#skilldropdown{
+padding: 1rem 0;
+  overflow: hidden;
+  
+}
+
+.skill-icon{
+ 
+  color: rgba(147, 144, 144, 0.868);
+  /* height: 0;
+
+  transition: height 1.5s ease; */
+}
+.skilldropdown-part2 {
+  padding: 0.5rem 0.5rem;
+} 
+/* .skill-open{
+  /* height: unset; 
+  
+} */
+.dev-icons{
+  display: block;
+  font-size: 3rem;
+  list-style: none;
+  text-align: center;
+}
+.software-skill-inline{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.software-skill-inline p{
+font-size: 10px;
+}
+.software-skill-inline:hover{
+    color: orange;
+}
+.skill-text{
+  display: flex;
+  justify-content: space-between;
+}
+.skill-text button{
+  background-color: rgba(255, 253, 253, 0);
+  border: 0;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.skill-text button:hover{
+  color: orange;
+}
+.skilldropdown-part1{
+  height: 250px;
+  width: 250px;
+}
+
+
+
+
+.middleSection{
+  color: white;
+  width: 85%;
+  display: flex;
+  align-items: start;
+  height: 50px;
+  padding: 10px 0;
+  padding-bottom: 0;
+  left: 2rem;
+  border:0 ;
+  border-top: 0;
+}
+.section{
+   padding: 5px 5px;
+   padding-bottom: 0;
+ 
+   background-color:orange;
+   height: 30px;
+   margin: 0 5px;
+   border-radius: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   cursor: pointer ;
+}
+.pms{
+ background-color: rgba(147, 144, 144, 0.868);
+}
+
+/*  Project  */
+.project-container{
+
+display: flex; 
+
+}
+
+.project-inner-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.project-heading{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-grid{
+  color: rgba(147, 144, 144, 0.868);
+  margin: 5px 5px;
+  padding: 10px 10px ;
+  border-radius: 5px;
+  border: rgba(147, 144, 144, 0.868) solid 1px ;
+}
+.project-grid h2{
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  color: white;
+  /* border-bottom: orange solid 1px  hidden; */
+  position: relative;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.project-grid h2:hover {
+  color: orange;
+  /* border-bottom: orange solid 1px; */
+  
+  transition: color  0.35s linear  ;
+}
+
+/* {--------------------------------animation ---------------------} */
+.project-heading2{
+  position: relative;
+  text-decoration: none;
+}
+.project-heading2:after{
+  content: "";
+  position: absolute;
+  background-color: orange;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+
+}
+.project-heading2:hover:after{
+  
+  width: 100% !important;
+  transition:0.35s;
+  transition-timing-function: ease-out;
+} 
+/* {--------------------------------animation ---------------------} */
+.project-heading2:hover{
+color: orange;
+
+}
+
+
+
+
+/*   Education   */
+.education-container{
+
+   display: flex;
+
+}
+
+.education-container h2{
+  color: white;
+}
+.education-list h3, h4{
+  color: white;
+  
+}
+.education-list{
+  margin-bottom: 20px;
+  /* border-bottom: white solid 4px none;*/
+ 
+
+}
+
+
+
+
+.img-edu{
+   height: 125px;
+  width: 125px;
+  border-radius: 50%;
+}
+
+
+
+
+/*        contact             */
+
+
+.contact-icon{
+
+
+  display :flex;
+  align-content: center;
+
+  justify-content: center;
+}
+.contact-icon li{
+  margin: 20px 50px;
+}
+.location{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.contact-container{
+  border-bottom: none;
+}
+
+.lowest{
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+}
+::-webkit-scrollbar {
+  width: 0; /* Hide vertical scrollbar */
+  height: 0; /* Hide horizontal scrollbar */
+}
+
+
+
+/* responsive design*/
+@media(max-width:850px){
+  .wrapper{
+    padding: 1rem 0.5rem;
+  }
+  .navbar .links,
+  .navbar .action_btn {
+    display:none;
+  }
+  .navbar .toggle-btn{
+    display: block;
+  }
+  .drop-down-menu{
+    display: block;
+  }
+  .navbar .logo {
+    margin-left: 1.5rem;
+  }
+  /* .drop-down-menu {
+    margin-right: 1.5rem;
+  } */
+  .toggle-btn {
+    margin-right: 1.5rem;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 2rem;
+   
+  }
+  .Intro h1{
+    font-size: 30px;
+
+  }
+  main{
+    padding-top: 1rem;
+  }
+ 
+
+}
+@media(max-width:576px){  
+.drop-down-menu{
+  left: 2rem;
+  width: unset ;
+}
+.Intro{
+  width: 95%;
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.container-home{
+  width: 100%;
+}
+.navbar{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.Intro h1{
+  padding-bottom: 1.75rem;
+}
+.Intro button{
+  margin-top: 2rem;
+}
+main{
+  padding-top: 0.5rem;
+}
+.content{
+  margin: 0.25rem 0.25rem;
+}
+.project-inner-container{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  
+}
+.sec-container{
+  padding: 0.5rem 0.5rem;
+}
+
+.img-edu{
+  height: 90px;
+ width: 90px;
+ border-radius: 50%;
+}
+
+.contact-icon li{
+  margin: 10px 20px;
+}
+.lowest{
+  margin-bottom: 15px ;
+
+  font-size: 15px;
+  
+}
+
+}
+
+
+/*  
+ z-index
+ 1 = container
+ 2 = drop down menu 
+
+
+*/

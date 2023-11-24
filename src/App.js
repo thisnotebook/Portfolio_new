@@ -84,7 +84,7 @@ function App() {
                   with JavaScript / Reactjs / Nodejs / React Native
                   and some other cool libraries and frameworks.</p>
                 <div>
-                  <a href="https://drive.google.com/file/d/1oGe5xuBDCjIyGqcGJ-uM5X9OSqY3Q3BT/view?usp=sharing" target='_blank'>  <button class="resume-btn"><h3>Resume</h3></button></a>
+                  <a href="https://docs.google.com/document/d/1UvoEH0RKe6Ya53iYZuN7uBEKCdMRAid-/edit?usp=sharing&ouid=105557298003210130804&rtpof=true&sd=true" target='_blank'>  <button class="resume-btn"><h3>Resume</h3></button></a>
                   <a href="#Contacts"> <button class="resume-btn"  ><h3>Contacts</h3></button></a>
                 </div>
 
